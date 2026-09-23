@@ -1,0 +1,43 @@
+{
+  "hir_train": {
+    "dataset_id": "sastpg/HIR-16K",
+    "revision": "2a95f69eb56cc47edc16a45f939cde479673a4cb",
+    "config": "default",
+    "split": "train",
+    "file": "HIR_trainv1.jsonl"
+  },
+  "generation_settings": {
+    "temperature": 0.6,
+    "max_output_tokens": 4096,
+    "note": "These are generation settings; the evaluators consume exported response files."
+  },
+  "eval_benchmarks": [
+    {
+      "name": "IFEval",
+      "enabled": true,
+      "local_input": "instruction_following_eval/data/input_data.jsonl",
+      "adapter": "prompt_response_jsonl",
+      "response_schema": {
+        "prompt": "exact original prompt",
+        "response": "model answer"
+      }
+    },
+    {
+      "name": "IFBench",
+      "enabled": true,
+      "local_input": "IFBench/data/IFBench_test.jsonl",
+      "adapter": "prompt_response_jsonl",
+      "response_schema": {
+        "prompt": "exact original prompt",
+        "response": "model answer"
+      }
+    },
+    {
+      "name": "MulDimIF",
+      "enabled": true,
+      "local_input": "MulDimIF/Data/test.json",
+      "adapter": "muldimif_conversation_append",
+      "response_schema": "preserve original sample and append generated assistant response to conversations"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Local configuration and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+training/env.sh
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Generated data, checkpoints, and logs
+data/
+datasets/
+checkpoints/
+experiments/
+outputs/
+logs/
+wandb/
+tensorboard/
+.cache/
+*.log
+*.parquet
+*.arrow
+*.jsonl
+*.npy
+*.npz
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
