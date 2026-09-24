@@ -60,11 +60,14 @@ The launcher uses $\lambda=2$, clip threshold $c=5$, and all available constrain
 If you use this code, please cite the paper:
 
 ~~~bibtex
-@inproceedings{zheng2026ccopd,
-  title     = {Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following},
-  author    = {Zheng, Yanzhao and Yu, Yuanqiang and Xu, Tianze and Ma, Chao and Zhang, Zhentao and Zhu, Jihuai and Dong, Baohua and Zhu, Hangcheng and Huang, Ruohui},
-  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
-  year      = {2026}
+@misc{zheng2026ccopd,
+  title         = {Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following},
+  author        = {Zheng, Yanzhao and Yu, Yuanqiang and Xu, Tianze and Ma, Chao and Zhang, Zhentao and Zhu, Jihuai and Dong, Baohua and Zhu, Hangcheng and Huang, Ruohui},
+  year          = {2026},
+  eprint        = {2609.27421},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2609.27421}
 }
 ~~~
 
