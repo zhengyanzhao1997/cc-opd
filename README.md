@@ -1,6 +1,6 @@
 # CC-OPD
 
-**Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following** (EMNLP 2026).
+**Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following** (EMNLP 2026 Main Conference).
 
 ## The idea
 
